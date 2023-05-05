@@ -1,0 +1,32 @@
+version: "3"
+services:
+  web:
+    container_name: web
+    build: ./client
+    ports:
+      - 3000:3000
+
+  api:
+    build: ./server
+    container_name: api
+    ports:
+      - 8089:8089
+    environment:
+      SQL_HOST: mysql
+      SQL_USER: root
+      SQL_DB: wht_db
+      SQL_DIALECT: mysql
+      SQL_PASSWORD: Secret@123
+      SQL_PORT: 3306
+      
+  mysql:
+    container_name: mysql
+    image: mysql:8.0
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Secret@123
+      MYSQL_DATABASE: wht_db
+
+volumes:
+  mysql-data:

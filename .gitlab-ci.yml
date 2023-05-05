@@ -1,0 +1,40 @@
+# The gitlab runner must be configured to run the scripts
+# Runner machine must have all dependencies (git, docker, ...)
+
+stages:
+  - build
+  - test
+  - cleanup
+
+build:
+  stage: build
+  script:
+    - docker compose build
+  when: always
+
+test-run:
+  stage: test
+  script:
+    - docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+    - sleep 10
+  when: on_success
+
+test-suite:
+  stage: test
+  script:
+    - (cd server && /snap/bin/npm install && /snap/bin/npm run coverage && cd ..)
+    - (cd client && /snap/bin/npm install && /snap/bin/npm run coverage && cd ..)
+  when: on_success
+
+#Cleanup script
+cleanup:
+  stage: cleanup
+  script:
+    - docker run hello-world
+    - docker rm -f $(docker ps -a -q)             # Remove all containers
+    - docker volume rm $(docker volume ls -q)     # Remove all volumes
+    - docker system prune -a -f                   # Remove all images
+  allow_failure: true
+  when: on_success
+
+

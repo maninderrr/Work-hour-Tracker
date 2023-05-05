@@ -1,0 +1,15 @@
+version: "3"
+services:
+  web:
+    working_dir: /app-dev
+    volumes:
+      - type: bind
+        source: ./client
+        target: /app-dev
+
+  api:
+    working_dir: /app-dev
+    volumes:
+      - type: bind
+        source: ./server
+        target: /app-dev

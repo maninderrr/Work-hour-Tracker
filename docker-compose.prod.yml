@@ -1,0 +1,7 @@
+version: "3"
+services:
+  web:
+    working_dir: /app
+
+  api:
+    working_dir: /app
