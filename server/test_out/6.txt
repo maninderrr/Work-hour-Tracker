@@ -1,0 +1,38 @@
+ \033[32mPASS\033[0m  routes/register.routes.test.js
+  ● Console
+
+    console.log
+      New User Registered
+
+      at log (controllers/register.controller.js:64:17)
+
+    console.log
+      Added to employee db
+
+      at log (controllers/register.controller.js:69:21)
+
+POST /register \033[33m400\033[0m 0.161 ms - 39
+POST /register \033[33m400\033[0m 0.190 ms - 39
+POST /register \033[33m400\033[0m 0.168 ms - 39
+POST /register \033[33m400\033[0m 0.211 ms - 39
+POST /register \033[32m200\033[0m 52.176 ms - 2
+ PASS  routes/employee.routes.test.js
+POST /employee \033[33m400\033[0m 1.085 ms - 39
+POST /employee \033[33m400\033[0m 0.173 ms - 39
+POST /employee \033[33m400\033[0m 0.201 ms - 39
+POST /employee \033[33m400\033[0m 0.178 ms - 39
+POST /employee \033[33m400\033[0m 0.220 ms - 39
+POST /employee \033[32m200\033[0m 0.132 ms - 2
+POST /login \033[33m400\033[0m 0.865 ms - 58
+POST /login \033[33m400\033[0m 0.202 ms - 58
+POST /login \033[33m400\033[0m 0.203 ms - 58
+POST /login \033[33m401\033[0m 0.297 ms - 53
+ PASS  routes/login.routes.test.js
+  ● Console
+
+    console.log
+       looking for email in register db
+
+      at log (controllers/login.controller.js:26:17)
+
+ PASS  routes/index.test.js

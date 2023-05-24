@@ -1,0 +1,232 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  /* background-image: linear-gradient(79deg, #c01fd8 , #de96d6, #a8683b ); */
+}
+
+/* .auth-form-container, .login-form, .reg-form {
+  display: flex;
+  flex-direction: column;
+} */
+.full_bg{
+  padding-top: 200px;
+}
+@media screen and (min-width:600px) {
+  .auth-form-container{
+    padding: 5rem;
+    border: 1px solid rgb(5, 0, 0);
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+/* label{
+  text-align: left;
+  padding: 0.25rem 0;
+  color: rgb(3, 0, 0);
+} */
+
+/* input {
+  margin: 0.5rem 0;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+} */
+
+button{
+  border: none;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.link-btn {
+  background: none;
+  color: rgb(12, 1, 1);
+  text-decoration: underline;
+}
+
+h2{
+  color: rgb(11, 1, 1);
+}
+
+.error {
+color: rgb(122, 4, 4);
+}
+
+.pieChartProjects{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 10px;
+}
+
+// navbar
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: rgb(11, 1, 1);
+  padding: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand a {
+  color: rgb(19, 2, 2);
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar-toggler {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggler span {
+  display: block;
+  height: 2px;
+  width: 20px;
+  margin-bottom: 4px;
+  background-color: black;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.navbar-menu.active {
+  max-height: 500px;
+}
+
+.navbar-item {
+  margin-bottom: 10px;
+}
+
+.navbar-link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: gray;
+}
+
+.hourfield{
+  border: solid;
+  border-width: 2px;
+    color: white;
+}
+.hours1{
+  text-align: center;
+      font-size: 15px;
+  background: transparent;
+    color: white;
+    width: 80px;
+}
+.week{
+  padding: 8px;
+}
+.center1{
+  text-align: center;
+  color: #275b67;
+}
+.buttons{
+  font-weight: bold;
+}
+.pad{
+  padding: 15px;
+}
+.but1{
+  font-size: 18px;
+}
+.bold{
+  font-weight: bold;
+}
+
+#root {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.table_al {
+  margin: auto;
+}
+
+.hourfield{
+  border: solid;
+  border-width: 2px;
+    color: white;
+}
+.hours1{
+  text-align: center;
+      font-size: 15px;
+  background: transparent;
+    color: aliceblue;
+    width: 80px;
+}
+.week{
+  padding: 8px;
+}
+.center1{
+  text-align: center;
+  color: aliceblue;
+  position:relative;
+  top: 17px;
+}
+.buttons{
+  font-weight: bold;
+}
+.pad{
+  padding: 15px;
+}
+.but1{
+  font-size: 18px;
+}
+.bold{
+  font-weight: bold;
+}
+.full_bg{
+  background:#464646;
+  position: relative;
+    top: 100px;
+    height: 400px;
+
+}

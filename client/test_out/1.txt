@@ -1,0 +1,2 @@
+> demo@0.0.0 coverage
+> jest --coverage

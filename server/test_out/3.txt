@@ -1,0 +1,19 @@
+ \033[32mPASS\033[0m  routes/project.routes.test.js
+  ● Console
+
+    console.log
+      New User Registered
+
+      at log (controllers/register.controller.js:64:17)
+
+    console.log
+      Added to employee db
+
+      at log (controllers/register.controller.js:69:21)
+
+POST /register \033[33m400\033[0m 0.976 ms - 39
+POST /register \033[33m400\033[0m 0.163 ms - 39
+POST /register \033[33m400\033[0m 0.200 ms - 39
+POST /register \033[33m400\033[0m 0.211 ms - 39
+POST /register \033[33m400\033[0m 0.116 ms - 39
+POST /register \033[32m200\033[0m 52.388 ms - 2

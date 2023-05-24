@@ -1,0 +1,13 @@
+ \033[32mPASS\033[0m  routes/mapping.routes.test.js
+  ● Console
+
+    console.log
+       looking for email in register db
+
+      at log (controllers/login.controller.js:26:17)
+
+POST /login \033[33m400\033[0m 0.936 ms - 58
+POST /login \033[33m400\033[0m 0.192 ms - 58
+POST /login \033[33m400\033[0m 0.179 ms - 58
+POST /login \033[33m401\033[0m 1.801 ms - 53
+POST /register \033[33m400\033[0m 0.843 ms - 39
